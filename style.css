@@ -20,7 +20,7 @@
       border-top: 1px solid #f9a5c8;
       margin-top: auto;
     }
-    header h1, nav a, h2, footer p {
+    header h1, nav a, h2, h3, footer p {
       text-transform: lowercase;
     }
     header h1 {
@@ -60,6 +60,12 @@
       color: #f9a5c8;
       margin-bottom: 10px;
     }
+    h3 {
+      font-size: 1.2em;
+      color: #f9a5c8;
+      margin-bottom: 10px;
+    }
+
     .social-media a {
       display: inline-block;
       margin: 5px;
@@ -75,4 +81,24 @@
     
     a[href^="mailto:okc@mecha.love"] {
     color: #c69ed5;
+  }
+  .scrolling-text {
+    width: 100%;               
+    white-space: nowrap;       
+    overflow: hidden;         
+    box-sizing: border-box;   
+  }
+  
+  .scrolling-text p {
+    display: inline-block;     
+    animation: scroll-text 10s linear infinite;  
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);  
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
   }
